@@ -62,11 +62,36 @@ class Produtos extends Component{
                             </div>
                         </div>
 
-                        <section className="content">
-                            <div className="container-fluid">
-                                    <SmallBox boxes={boxes} />
-                            </div>
-                        </section>
+                        <div class="card-body p-3">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Coca Cola</td>
+                                        <td class="text-center align-middle py-0">
+                                            <div class="btn-group btn-group-sm">
+                                                <a href="#"
+                                                    class="btn btn-info">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                                <button 
+                                                    class="btn btn-danger act-delete" > 
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+
+
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
                 <Footer/>

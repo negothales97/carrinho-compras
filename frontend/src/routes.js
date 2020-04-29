@@ -3,7 +3,7 @@ import React from 'react';
 
 import Logon from './pages/Logon'
 import Dashboard from './pages/Dashboard'
-import Produto from './pages/Produtos'
+import Produtos from './pages/Produtos'
 
 export default function Routes() {
     return(
@@ -11,7 +11,7 @@ export default function Routes() {
             <Switch>
                 <Route path="/" exact component={Logon} />
                 <Route path="/dashboard"  component={Dashboard} />
-                <Route path="/produtos"  component={Produto} />
+                <Route path="/produtos"  component={Produtos} />
             </Switch>
         </BrowserRouter>
     );
