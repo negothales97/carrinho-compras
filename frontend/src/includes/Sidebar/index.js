@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default function Sidebar(){
     return (
@@ -13,12 +14,28 @@ export default function Sidebar(){
                 <div className="user-panel mt-3 pb-3 mb-3 d-flex">
                     
                 <div className="info">
-                    <a href="#teste" className="d-block">Alexander Pierce</a>
+                    <a href="#teste" className="d-block">Thales Serra</a>
                 </div>
             </div>
     
             <nav className="mt-2">
                 <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+                    <li className="nav-item">
+                        <Link className='nav-link' to='/dashboard'>
+                            <i className="nav-icon fas fa-th"></i>
+                            <p>
+                                Dashboard
+                            </p>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className='nav-link' to='/produtos'>
+                            <i className="nav-icon fas fa-th"></i>
+                            <p>
+                                Produtos
+                            </p>
+                        </Link>
+                    </li>
                     <li className="nav-item has-treeview menu-open">
                         <a href="#teste" className="nav-link active">
                             <i className="nav-icon fas fa-tachometer-alt"></i>
@@ -56,4 +73,4 @@ export default function Sidebar(){
         </div>
     </aside>
     );
-}
+}   

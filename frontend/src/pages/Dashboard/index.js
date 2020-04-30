@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../includes/Header'
 import Sidebar from '../../includes/Sidebar'
-import Footer from '../../includes/Footer'
 
 const SmallBox = props => {
     const boxes = props.boxes.map((box, index) => {
@@ -68,8 +67,6 @@ class Dashboard extends Component{
                             </div>
                         </section>
                     </div>
-
-                <Footer/>
             </div>
         );
     };
