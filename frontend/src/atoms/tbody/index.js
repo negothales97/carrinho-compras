@@ -7,7 +7,7 @@ export const Tbody = () => {
             <tr>
                 <td>123456</td>
                 <td>Coca Cola</td>
-                <td class="text-center align-middle">
+                <td className="text-center align-middle">
                     <div className="btn-group btn-group-sm">
                         <button title="Editar" className="btn btn-outline-info">
                             <i className="fa fa-edit" aria-hidden="true"></i>
