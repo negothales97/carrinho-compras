@@ -1,24 +1,11 @@
 import React, { Component } from 'react';
-import Header from '../../includes/Header'
-import Sidebar from '../../includes/Sidebar'
-import Table from '../Table';
+import Header from '../../molecules/Header'
+import Sidebar from '../../molecules/Sidebar'
+import {Card} from '../../molecules/Card';
 
 class Produtos extends Component{
     render() {
-        const boxes = [
-            {
-                color: "danger"
-            },
-            {
-                color: "warning"
-            },
-            {
-                color: "info"
-            },
-            {
-                color: "success"
-            },
-        ];
+        
         return(
             <div>
                 <Header/>
@@ -33,7 +20,7 @@ class Produtos extends Component{
                                 </div>
                             </div>
                         </div>
-                        <Table/>
+                        <Card/>
                     </div>
             </div>
         );

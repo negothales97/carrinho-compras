@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import React from 'react';
 
-import Logon from './pages/Logon'
-import Dashboard from './pages/Dashboard'
-import Produtos from './pages/Produtos'
+import Logon from './organisms/Logon'
+import Dashboard from './organisms/Dashboard'
+import Produtos from './organisms/Produtos'
 
 export default function Routes() {
     return(
