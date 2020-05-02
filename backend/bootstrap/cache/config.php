@@ -216,6 +216,73 @@
     ),
     'prefix' => 'laravel_cache',
   ),
+  'cors' => 
+  array (
+    'cors_profile' => 'Spatie\\Cors\\CorsProfile\\DefaultProfile',
+    'default_profile' => 
+    array (
+      'allow_credentials' => false,
+      'allow_origins' => 
+      array (
+        0 => '*',
+      ),
+      'allow_methods' => 
+      array (
+        0 => 'POST',
+        1 => 'GET',
+        2 => 'OPTIONS',
+        3 => 'PUT',
+        4 => 'PATCH',
+        5 => 'DELETE',
+      ),
+      'allow_headers' => 
+      array (
+        0 => 'Content-Type',
+        1 => 'X-Auth-Token',
+        2 => 'Origin',
+        3 => 'Authorization',
+      ),
+      'expose_headers' => 
+      array (
+        0 => 'Cache-Control',
+        1 => 'Content-Language',
+        2 => 'Content-Type',
+        3 => 'Expires',
+        4 => 'Last-Modified',
+        5 => 'Pragma',
+      ),
+      'forbidden_response' => 
+      array (
+        'message' => 'Forbidden (cors).',
+        'status' => 403,
+      ),
+      'max_age' => 86400,
+    ),
+    'paths' => 
+    array (
+      0 => 'api/*',
+    ),
+    'allowed_methods' => 
+    array (
+      0 => '*',
+    ),
+    'allowed_origins' => 
+    array (
+      0 => '*',
+    ),
+    'allowed_origins_patterns' => 
+    array (
+    ),
+    'allowed_headers' => 
+    array (
+      0 => '*',
+    ),
+    'exposed_headers' => 
+    array (
+    ),
+    'max_age' => 0,
+    'supports_credentials' => false,
+  ),
   'database' => 
   array (
     'default' => 'mysql',
@@ -576,49 +643,6 @@
     'remote_sites_path' => '',
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
-  ),
-  'cors' => 
-  array (
-    'cors_profile' => 'Spatie\\Cors\\CorsProfile\\DefaultProfile',
-    'default_profile' => 
-    array (
-      'allow_credentials' => false,
-      'allow_origins' => 
-      array (
-        0 => '*',
-      ),
-      'allow_methods' => 
-      array (
-        0 => 'POST',
-        1 => 'GET',
-        2 => 'OPTIONS',
-        3 => 'PUT',
-        4 => 'PATCH',
-        5 => 'DELETE',
-      ),
-      'allow_headers' => 
-      array (
-        0 => 'Content-Type',
-        1 => 'X-Auth-Token',
-        2 => 'Origin',
-        3 => 'Authorization',
-      ),
-      'expose_headers' => 
-      array (
-        0 => 'Cache-Control',
-        1 => 'Content-Language',
-        2 => 'Content-Type',
-        3 => 'Expires',
-        4 => 'Last-Modified',
-        5 => 'Pragma',
-      ),
-      'forbidden_response' => 
-      array (
-        'message' => 'Forbidden (cors).',
-        'status' => 403,
-      ),
-      'max_age' => 86400,
-    ),
   ),
   'trustedproxy' => 
   array (
