@@ -12,5 +12,4 @@ class Product extends Model
         'brand',
         'um',
     ];
-
 }

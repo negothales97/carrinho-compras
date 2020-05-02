@@ -8,11 +8,9 @@ export default function Produtos() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        api.get('product/', {
-        })
+        api.get('product/')
             .then(response => setProducts(response.data));
     });
-
 
     return (
         <div>
